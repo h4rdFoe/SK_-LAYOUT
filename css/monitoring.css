@@ -1,0 +1,23 @@
+tr.striped {
+    border-bottom: none;
+  }
+
+.monit_table th{
+    padding: 5px;
+    vertical-align: middle;
+    border-radius: 0;
+    text-align: center;
+    border: 1px solid #b0bec5
+}
+
+.monit_table td{
+    padding: 2px 1px;
+    border: 1px solid #b0bec5
+}
+
+.monit_nav li > a{
+    height: auto;
+    line-height: 1; 
+    padding-top: 10px; 
+    padding-bottom: 10px
+}

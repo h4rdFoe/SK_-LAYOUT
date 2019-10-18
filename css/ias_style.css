@@ -1,0 +1,245 @@
+/*Переопределяем стандартную css*/
+.blue-grey.darken-1{
+  background-color:#62899c !important; 
+}
+
+.green {
+  background-color: #1b9881 !important;
+}
+
+.green-text {
+  color: #1b9881 !important;
+}
+
+a {
+  color: #1b9881; 
+}
+
+i.tiny {
+  font-size: 1.1rem;
+}
+
+@media only screen and (min-width: 993px) {
+  .container {
+    width: 75%;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .row .col.l0 {
+    width: 5%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+  }
+}
+
+.card .card-title {
+  color: black;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.card .card-content .collapsible-body {
+  padding: 5px;
+}
+
+.tabs .tab a {
+  color: #1b9881;
+}
+
+.tabs .tab a:focus, .tabs .tab a:focus.active {
+  background-color: #e0f2f1;
+}
+
+.tabs .tab a:hover, .tabs .tab a.active {
+  color: darkgreen;
+}
+
+.tabs .tab.disabled a,
+.tabs .tab.disabled a:hover {
+color: #1b9881;
+}
+
+.tabs .indicator {
+  background-color: #1b9881;
+}
+
+.dropdown-content li > a, .dropdown-content li > span {
+  color: #1b9881;
+}
+
+select:focus {
+  outline: 1px solid #1b9881;
+}
+
+.input-field > label {
+  color: gray;
+}
+
+.input-field > label:not(.label-icon).active {
+  -webkit-transform: translateY(-16px) scale(0.9);
+          transform: translateY(-16px) scale(0.9);
+}
+
+.select-wrapper input.select-dropdown {
+  margin: 0;
+}
+
+.select-wrapper + label {
+  top: -30px;
+  font-size: 0.9rem;
+}
+
+.datepicker-date-display {
+  background-color: #1b9881;
+}
+
+.datepicker-cancel,
+.datepicker-clear,
+.datepicker-today,
+.datepicker-done {
+color: #1b9881;
+}
+
+nav .brand-logo {
+  font-size: 1.3rem;
+}
+/*Переопределяем стандартную css*/
+
+body {
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: beige
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+
+  .content {
+    min-height: calc(100vh - 161px) !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .vmp_content{
+    background-color: white; 
+    border-radius: 2px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .fs1{
+    font-size: 12px;
+  }
+
+  .middle{
+    vertical-align: middle;
+  }
+
+  .ias_footer{
+    background-color:#3B3D3F; 
+    height: 65px;
+    line-height: 1.15;
+  }
+
+  .card_label_text{
+    color: black;
+    font-size: 14px;
+  }
+
+  .absol{
+    position: absolute;
+    left: 65% !important;
+  }
+
+  @media only screen and (min-width: 993px) {
+    .row .col.push-card{
+      left: 12.5%;
+    }
+    .row .col.push-l0 {
+      left: 4.1666666666%;
+    }
+  }
+
+  .logo-egisz{
+    height: 50px;
+    padding-top: 10px;
+    padding-left: 5px;
+  }
+
+  .return-menu{
+    width: 16%; 
+    margin-top: -6px; 
+    margin-right: 5px;
+  }
+
+  .double-width {
+    width: 370px !important;
+  }
+
+
+  .row .col.push-s1_5 {
+    left: 12%;
+  }
+
+  .alink {
+    transition: 0.1s linear; /* Время изменения */
+   }
+   
+  .alink:hover {
+  color: #2196f3;
+  transition: 0.1s linear; /* Цвет текста */
+  }
+
+  .alink_logo {
+    color: white; /* Цвет текста */
+    transition: 0.1s linear; /* Время изменения */
+   }
+   
+  .alink_logo:hover {
+  color: #2196f3; /* Цвет текста */
+  }
+
+  @media only screen and (max-width: 993px) {
+    .btn-small{
+      width: 100%;
+      margin-bottom: 5px;
+    }
+
+    .mobile_margin{
+      margin-bottom: 0;
+    }
+
+    .container {
+      width: 100%;
+    }
+  }
+
+  .chips .input {
+    width: 100% !important;
+  }
+
+  .chips input::placeholder{
+    color: gray
+  }
+
+::-webkit-scrollbar{
+    width:8px;
+    height: 8px;
+}
+::-webkit-scrollbar-thumb{
+  background-color: #1b9881;
+  -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,0.5); 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background-color: #00838f;
+}
+
+::-webkit-scrollbar-track{
+  -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,0.3); 
+  border-radius: 10px;
+}

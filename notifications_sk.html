@@ -1,0 +1,311 @@
+<!doctype html>
+
+<html lang="ru">
+<head>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="utf-8">
+  <title>Уведомления</title>
+  <link rel="stylesheet" href="css/ias_style.css?v=1.0">
+  <link rel="stylesheet" href="css/nitification_sk.css">
+  <link rel="icon" type="image/x-icon" href="img/logo-langing.ico">
+</head>
+
+<body>
+<!-- Написать -->
+<div id="send" class="modal modal-fixed-footer">
+  <div class="modal-content">
+    <div class="row">
+      <div class="col s12">
+        <div class="chips"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s12">
+        <input required id="name" type="text">
+        <label for="name">Название группы</label>
+      </div>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <a href="#!" class="modal-close waves-effect waves-green btn-flat green text-primary">Отмена</a>
+    <a href="#!" class="modal-close waves-effect waves-green btn-flat green text-primary">Написать</a>
+  </div>
+</div>
+
+<!-- Изменить -->
+<div id="edit" class="modal modal-fixed-footer">
+  <div class="modal-content">
+    <div class="row">
+      <div class="col s12">
+        <div class="chips"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s12">
+        <input required id="name" type="text">
+        <label for="name">Название группы</label>
+      </div>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <a href="#!" class="modal-close waves-effect waves-green btn-flat green text-primary">Отмена</a>
+    <a href="#!" class="modal-close waves-effect waves-green btn-flat green text-primary">Изменить</a>
+  </div>
+</div>
+
+<!-- Окно добавления файла -->
+<div id="addfile" class="modal modal-fixed-footer">
+  <div class="modal-content">
+        <h6>Добавление файла</h6>
+        <hr>
+        <div class="row">
+            <form class="col s12">
+                <div class="row">
+                    <div class="input-field col s12">
+                      <textarea style="overflow-y: auto" id="textarea2" class="materialize-textarea"></textarea>
+                      <label for="textarea2">Подпись</label>
+                    </div>
+                </div>
+                <div class="row" action="#">
+                    <div class="col s12 file-field input-field">
+                        <div class="btn">
+                            <span>Выбрать</span>
+                            <input type="file" multiple>
+                        </div>
+                        <div class="file-path-wrapper">
+                            <input class="file-path validate" type="text" placeholder="Выберите файл">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat green text-primary">Отмена</a>
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat green text-primary">Отправить</a>
+  </div>
+</div>
+
+<!-- Информация о группе -->
+<div id="info" class="modal bottom-sheet modal-fixed-footer">
+  <div class="modal-content">
+    <h6>Информация о группе</h6>
+    <hr>
+    <p>Участники:</p>
+    <span>Санаторий "Россия" - НКФ ФГБУ "НМИЦ РК" Минзрава РФ</span>
+    <br>
+    <span>Санаторий "Россия" - НКФ ФГБУ "НМИЦ РК" Минзрава РФ</span>
+    <br>
+    <span>Санаторий "Россия" - НКФ ФГБУ "НМИЦ РК" Минзрава РФ</span>
+    <br>
+    <span>Санаторий "Россия" - НКФ ФГБУ "НМИЦ РК" Минзрава РФ</span>
+    <br>
+    <span>Санаторий "Россия" - НКФ ФГБУ "НМИЦ РК" Минзрава РФ</span>
+    <br>
+    <span>Санаторий "Россия" - НКФ ФГБУ "НМИЦ РК" Минзрава РФ</span>
+    <br>
+    <span>Санаторий "Россия" - НКФ ФГБУ "НМИЦ РК" Минзрава РФ</span>
+    <br>
+    <span>Санаторий "Россия" - НКФ ФГБУ "НМИЦ РК" Минзрава РФ</span>
+    <br>
+    <span>Санаторий "Россия" - НКФ ФГБУ "НМИЦ РК" Минзрава РФ</span>
+    <br>
+    <span>Санаторий "Россия" - НКФ ФГБУ "НМИЦ РК" Минзрава РФ</span>
+  </div>
+  <div class="modal-footer">
+    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Выйти</a>
+    <a href="#edit" class="modal-trigger waves-effect waves-green btn-flat">Изменить</a>
+    <a href="#!" class="modal-close waves-effect waves-green btn-flat">ОК</a>
+  </div>
+</div>
+
+<!-- user_bar -->
+<ul id='user' class='dropdown-content'>
+  <li class="active"><a href="notifications_sk.html"><i class="material-icons">email</i><span class=" right new badge green" data-badge-caption="4"></span>Уведомления</a></li>
+  <li><a href="#!"><i class="material-icons">exit_to_app</i>Выйти</a></li>
+</ul>
+<ul id='user-mobile' class='dropdown-content'>
+  <li class="active"><a href="notifications_sk.html"><span class=" right new badge green" data-badge-caption="4"></span>Уведомления</a></li>
+  <li><a href="#!">Выйти</a></li>
+</ul>
+<!-- lech_bar -->
+<ul id='lech' class='dropdown-content'>
+  <li><a href="card_sk.html">Карта пациента</a></li>
+  <li><a href="card_search_sk.html">Поиск пациента</a></li>
+  <li><a href="ticket_search_sk.html">Поиск заявки</a></li>
+  <li><a href="#!">Справочная информация</a></li>
+</ul>
+<ul id='lech-mobile' class='dropdown-content'>
+  <li><a href="card_sk.html">Карта пациента</a></li>
+  <li><a href="card_search_sk.html">Поиск пациента</a></li>
+  <li><a href="ticket_search_sk.html">Поиск заявки</a></li>
+  <li><a href="#!">Справочная информация</a></li>
+</ul>
+
+<nav id="menu" class="green">
+  <div class="nav-wrapper">
+    <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    <a href="">
+        <div style="margin-right: 28px;" class="alink_logo tooltipped brand-logo right" data-tooltip="Cистема мониторинга санаторно-курортного лечения">     
+          <span>ЕГИСЗ</span>
+          <img class="right logo-egisz" src="img/logo-langing.png">
+        </div>
+    </a>
+    <ul class="left hide-on-med-and-down">
+      <li class="active"><a class="dropdown-trigger" href="#!" data-target="user"><i class="material-icons left">account_box</i>ЦЕНТР Т.П. <i class="material-icons right">arrow_drop_down</i></a></li>
+      <li><a class="dropdown-trigger" href="#!" data-target="lech">ЛЕЧЕНИЕ<i class="material-icons right">arrow_drop_down</i></a></li>
+      <li><a href="">МОНИТОРИНГ</a></li>
+      <li><a href=""><i class="material-icons tooltipped" data-tooltip="АДМИНИСТРИРОВАНИЕ">settings</i></a></li>
+      <li><a href="https://portal.egisz.rosminzdrav.ru/forum/" class="tooltipped" data-tooltip="ФОРУМ" target="_blank"><i class="material-icons small">forum</i></a></li>
+    </ul>
+  </div>
+</nav>
+
+<ul class="sidenav" id="mobile-nav">
+  <li class="active"><a class="dropdown-trigger" href="#!" data-target="user-mobile">ЦЕНТР Т.П.<i class="material-icons right">arrow_drop_down</i></a></li>
+  <li><a class="dropdown-trigger" href="#!" data-target="lech-mobile">ЛЕЧЕНИЕ<i class="material-icons right">arrow_drop_down</i></a></li>
+  <li><a href="">МОНИТОРИНГ</a></li>
+  <li><a href="">АДМИНИСТРИРОВАНИЕ</a></li>
+  <li><a href="https://portal.egisz.rosminzdrav.ru/forum/" target="_blank">ФОРУМ</a></li>
+</ul>
+
+<div id='us_sp' class="row user_space" style="margin-bottom: 0">
+    <div id="notif" class="vmp_content content_notif col s12 mobile_margin">
+        <div class="row" style="margin-bottom: 0">
+            <div class="col s12">
+                <div class="blue-grey lighten-3 row valign-wrapper" style="margin-bottom: 0; margin-bottom: 5px">
+                  <div id="date_chat" class="col s0 black_text" style="margin-bottom: 0">
+                    <a href="#" class="tooltipped" data-tooltip="История"><i class="alink material-icons small">date_range</i></a>
+                  </div>
+                  <div class="col s12 center-align black_text" style="margin-bottom: 0">
+                    <a class="modal-trigger alink" href="#info"><h6>Группа 1</h6></a>
+                  </div>
+                  <div class="col s12 right input-field black_text" style="margin-bottom: 0">
+                    <i class="material-icons prefix">search</i>
+                    <input id="icon_prefix" type="text" placeholder="Найти...">
+                  </div>
+                </div>
+              <div class="content_body_notif" style="overflow-y: auto">
+                <div style="width: 99%">
+                <div class="notif_body">
+                    <b>Петров П.П.</b>
+                    <br>
+                    rgerggtg
+                    <br>
+                    gergerg
+                    <br>
+                    efw
+                    <span class="right">11:54</span>
+                </div>
+                <div class="notif_body_send">
+                    rgerggtg
+                    <br>
+                    gergerg
+                    <br>
+                    efw
+                    <span class="right">11:55</span>
+                </div>
+                <div class="notif_body">
+                    <b>Петров П.П.</b>
+                    <br>
+                    rgerggtg
+                    <br>
+                    gergerg
+                    <br>
+                    efw
+                    <span class="right">11:54</span>
+                </div>
+                <div class="notif_body_send">
+                    rgerggtg
+                    <br>
+                    gergerg
+                    <br>
+                    efw
+                    <span class="right">11:55</span>
+                </div>
+                <div class="notif_body">
+                    <b>Петров П.П.</b>
+                    <br>
+                    rgerggtg
+                    <br>
+                    gergerg
+                    <br>
+                    efw
+                    <span class="right">11:54</span>
+                </div>
+                <div class="notif_date center-align">
+                    <b>20 июня</b>
+                </div>
+                <div class="notif_body_send">
+                    rgerggtg
+                    <br>
+                    gergerg
+                    <br>
+                    efw
+                    <span class="right">11:55</span>
+                </div>
+                <div class="notif_body_send">
+                  Бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла Бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла
+                  <hr>
+                  <a href="#download" class="alink">Эпикриз1.jpg</a>
+                  <br>
+                  <a href="#download" class="alink">Эпикриз2.jpg</a>
+                  <br>
+                  <a href="#download" class="alink">Эпикриз3.jpg</a>
+                  <br>
+                  <a href="#download" class="alink">Эпикриз4.jpg</a>
+                  <br>
+                  <a href="#download" class="alink">Эпикриз5.jpg</a>
+                  <br>
+                  <a href="#download" class="alink">Эпикриз6.jpg</a>
+                  <br>
+                  <a href="#download" class="alink"><b>Скачать все</b></a>
+                  <span class="right">11:55</span>
+                </div>
+              </div>
+              </div>
+                <div id="send_in" class="blue-grey lighten-3 row valign-wrapper black_text send_in" style="margin-bottom: 0">
+                    <a class="alink modal-trigger" href="#addfile"><i class="material-icons Tiny">attach_file</i></a>
+                    <textarea style="margin-left: 5px; margin-right: 5px; overflow-y: auto;" id="textarea2" class="materialize-textarea" placeholder="Написать сообщение..."></textarea>
+                    <a class="alink" href="#!" style="padding-right: 12px"><i class="material-icons Tiny">send</i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <ul id="sideb" class="sidenav sidenav-fixed sid_height">
+      <li>
+        <div class="user-view" style="line-height: 1.5">
+          <div class="green background"></div>
+          <h5 class="blue-grey-text text-lighten-4">Центр Т.П.</h5>
+          <span class="white-text bar_text"><span class="blue-grey-text text-lighten-4"><b>СНИЛС: </b></span>99-888-777 03</span>
+          <br>
+          <span class="white-text bar_text"><span class="blue-grey-text text-lighten-4"><b>Регион: </b></span>г. Москва</span>
+          <br>
+          <span class="white-text bar_text"><span class="blue-grey-text text-lighten-4"><b>Email: </b></span>jdandturk@gmail.com</span>
+          <br>
+          <span class="white-text bar_text"><span class="blue-grey-text text-lighten-4"><b>Организация: </b></span>Санаторий "Россия" - НКФ ФГБУ "НМИЦ РК" Минзрава РФ</span>
+        </div>
+      </li>
+      <li><a class="subheader"><i class="material-icons">mail</i>УВЕДОМЛЕНИЯ</a></li>
+      <li>
+          <a href="#send" class="modal-trigger blue-grey-text"><i class="material-icons blue-grey-text">add</i>Написать</a>
+          <a href="important_notif_sk.html" class="collection-item"><span class="new badge green" data-badge-caption="4"></span>Важные</a>
+          <a href="#!" class="collection-item"><span class="new badge green" data-badge-caption="4"></span>Системные</a>
+          <a href="#!" class="collection-item active blue-grey lighten-3"><span class="new badge green" data-badge-caption="4"></span>Группа 1</a>
+      </li>
+    </ul>
+</div>
+<script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+<script src="js/notif.js"></script>
+<!--JavaScript at end of body for optimized loading-->
+<script type="text/javascript" src="js/materialize.js"></script>
+</body>
+</html>
