@@ -1,0 +1,9 @@
+.content {
+    min-height: calc(100vh - 85px) !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  body {
+    background-color: #00bcd4
+  }
