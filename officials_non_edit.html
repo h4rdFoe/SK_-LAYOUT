@@ -27,23 +27,23 @@
 </ul>
 <!-- lech_bar -->
 <ul id='lech' class='dropdown-content'>
-  <li><a href="card_sk.html">Карта пациента</a></li>
+  <li class="active"><a href="card_sk.html">Карта пациента</a></li>
   <li><a href="card_search_sk.html">Поиск пациента</a></li>
   <li><a href="ticket_search_sk.html">Поиск заявки</a></li>
   <li><a href="#!">Справочная информация</a></li>
 </ul>
 <ul id='lech-mobile' class='dropdown-content'>
-  <li><a href="card_sk.html">Карта пациента</a></li>
+  <li class="active"><a href="card_sk.html">Карта пациента</a></li>
   <li><a href="card_search_sk.html">Поиск пациента</a></li>
   <li><a href="ticket_search_sk.html">Поиск заявки</a></li>
   <li><a href="#!">Справочная информация</a></li>
 </ul>
 <ul id='vvod-dannyh' class='dropdown-content'>
-  <li class="active"><a href="officials.html">Должностные лица</a></li>
+  <li><a href="officials.html">Должностные лица</a></li>
   <li><a href="categories.html">Категории</a></li>
 </ul>
 <ul id='vvod-dannyh-mobile' class='dropdown-content'>
-  <li class="active"><a href="officials.html">Должностные лица</a></li>
+  <li><a href="officials.html">Должностные лица</a></li>
   <li><a href="categories.html">Категории</a></li>
 </ul>
 
@@ -58,8 +58,8 @@
     </a>
     <ul class="left hide-on-med-and-down">
       <li><a class="dropdown-trigger" href="#!" data-target="user"><i class="material-icons left">account_box</i>ЦЕНТР Т.П. <i class="material-icons right">arrow_drop_down</i></a></li>
-      <li class="active"><a class="dropdown-trigger" href="#!" data-target="vvod-dannyh">ВВОД ДАННЫХ<i class="material-icons right">arrow_drop_down</i></a></li>
-      <li><a class="dropdown-trigger" href="#!" data-target="lech">ЛЕЧЕНИЕ<i class="material-icons right">arrow_drop_down</i></a></li>
+      <li class="active"><a class="dropdown-trigger" href="#!" data-target="lech">ЛЕЧЕНИЕ<i class="material-icons right">arrow_drop_down</i></a></li>
+	  <li><a class="dropdown-trigger" href="#!" data-target="vvod-dannyh">ВВОД ДАННЫХ<i class="material-icons right">arrow_drop_down</i></a></li>
       <li><a href="">МОНИТОРИНГ</a></li>
       <li><a href=""><i class="material-icons tooltipped" data-tooltip="АДМИНИСТРИРОВАНИЕ">settings</i></a></li>
       <li><a href="https://portal.egisz.rosminzdrav.ru/forum/" class="tooltipped" data-tooltip="ФОРУМ" target="_blank"><i class="material-icons small">forum</i></a></li>
@@ -69,8 +69,8 @@
 
 <ul class="sidenav" id="mobile-nav">
   <li><a class="dropdown-trigger" href="#!" data-target="user-mobile">ЦЕНТР Т.П.<i class="material-icons right">arrow_drop_down</i></a></li>
-  <li class="active"><a class="dropdown-trigger" href="#!" data-target="vvod-dannyh-mobile">ВВОД ДАННЫХ<i class="material-icons right">arrow_drop_down</i></a></li>
-  <li><a class="dropdown-trigger" href="#!" data-target="lech-mobile">ЛЕЧЕНИЕ<i class="material-icons right">arrow_drop_down</i></a></li>
+  <li class="active"><a class="dropdown-trigger" href="#!" data-target="lech-mobile">ЛЕЧЕНИЕ<i class="material-icons right">arrow_drop_down</i></a></li>
+  <li><a class="dropdown-trigger" href="#!" data-target="vvod-dannyh-mobile">ВВОД ДАННЫХ<i class="material-icons right">arrow_drop_down</i></a></li>
   <li><a href="">МОНИТОРИНГ</a></li>
   <li><a href="">АДМИНИСТРИРОВАНИЕ</a></li>
   <li><a href="https://portal.egisz.rosminzdrav.ru/forum/" target="_blank">ФОРУМ</a></li>
@@ -83,7 +83,7 @@
 	  <br>
 	  <div class="row">
           <div class="col s12">
-            <a href="officials.html" class="waves-effect waves-light btn-small green">Редактировать</a>
+            <a href="officials.html" class="waves-effect waves-light btn-small green"><i class="material-icons left">edit</i>Редактировать</a>
           </div>
       </div>
 	  <hr>
@@ -92,7 +92,7 @@
         <table id="search" class="responsive-table">
           <thead>
             <tr>
-                <th>ФИО</th>
+                <th>Фамилия И.О.</th>
                 <th>Должность</th>
                 <th>Телефон</th>
 				<th>E-mail</th>
