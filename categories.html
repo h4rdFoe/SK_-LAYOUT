@@ -45,7 +45,7 @@
     <li><a href="#!">Справочная информация</a></li>
   </ul>
   <ul id='lech-mobile' class='dropdown-content'>
-    <li ><a href="card_sk.html">Карта пациента</a></li>
+    <li><a href="card_sk.html">Карта пациента</a></li>
     <li><a href="card_search_sk.html">Поиск пациента</a></li>
     <li><a href="ticket_search_sk.html">Поиск заявки</a></li>
     <li><a href="#!">Справочная информация</a></li>
@@ -64,7 +64,7 @@
       <ul class="left hide-on-med-and-down">
         <li><a class="dropdown-trigger" href="#!" data-target="user"><i class="material-icons left">account_box</i>ЦЕНТР
             Т.П. <i class="material-icons right">arrow_drop_down</i></a></li>
-		<li class="active"><a class="dropdown-trigger" href="#!" data-target="vvod-dannyh">ВВОД ДАННЫХ<i
+        <li class="active"><a class="dropdown-trigger" href="#!" data-target="vvod-dannyh">ВВОД ДАННЫХ<i
               class="material-icons right">arrow_drop_down</i></a></li>
         <li><a class="dropdown-trigger" href="#!" data-target="lech">ЛЕЧЕНИЕ<i
               class="material-icons right">arrow_drop_down</i></a></li>
@@ -79,8 +79,8 @@
   <ul class="sidenav" id="mobile-nav">
     <li><a class="dropdown-trigger" href="#!" data-target="user-mobile">ЦЕНТР Т.П.<i
           class="material-icons right">arrow_drop_down</i></a></li>
-	  <li class="active"><a class="dropdown-trigger" href="#!" data-target="vvod-dannyh-mobile">ВВОД ДАННЫХ<i
-          class="material-icons right">arrow_drop_down</i></a></li>	  
+    <li class="active"><a class="dropdown-trigger" href="#!" data-target="vvod-dannyh-mobile">ВВОД ДАННЫХ<i
+          class="material-icons right">arrow_drop_down</i></a></li>
     <li><a class="dropdown-trigger" href="#!" data-target="lech-mobile">ЛЕЧЕНИЕ<i
           class="material-icons right">arrow_drop_down</i></a></li>
     <li><a href="">МОНИТОРИНГ</a></li>
@@ -95,9 +95,10 @@
         <br>
         <div class="row">
           <div class="col s12">
-            <a href="categories_nonedit.html" onclick="M.toast({html: 'Изменения внесены'})"
-              class="waves-effect waves-light btn-small green">Сохранить</a>
-            <a href="categories_nonedit.html" class="waves-effect waves-light btn-small red">Очистить</a>
+            <a href="categories_nonedit.html" class="waves-effect waves-light btn-small green"><i
+                class="material-icons left">save</i>Сохранить</a>
+            <a href="categories_nonedit.html" class="waves-effect waves-light btn-small green"><i
+                class="material-icons left">refresh</i>Сбросить</a>
           </div>
         </div>
         <hr>
@@ -108,22 +109,26 @@
                 <tr>
                   <th></th>
                   <th>Сезонные</th>
-                  <th>Количество койко дней</th>
+                  <th>Количество койко-дней</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td><label><input type="checkbox" /><span></span></label></td>
+                  <td><label><input type="checkbox" /checked /><span></span></label></td>
                   <td class="col1">Для лечения детей</td>
                   <td>
-                    <input class="validate" required id="qq" type="text">
+                    <div class="input-field">
+                      <input value="900" class="validate" required id="qq" type="text">
+                    </div>
                   </td>
                 </tr>
                 <tr>
-                  <td><label><input type="checkbox" /><span></span></label></td>
+                  <td><label><input type="checkbox" /checked /><span></span></label></td>
                   <td class="col1">Для лечения взрослых</td>
                   <td>
-                    <input class="validate" required id="qq" type="text">
+                    <div class="input-field">
+                      <input value="900" class="validate" required id="qq" type="text">
+                    </div>
                   </td>
                 </tr>
                 <tr>
@@ -156,10 +161,12 @@
                   </td>
                 </tr>
                 <tr>
-                  <td><label><input type="checkbox" /><span></span></label></td>
+                  <td><label><input type="checkbox" /checked /><span></span></label></td>
                   <td class="col1">Для лечения взрослых</td>
                   <td>
-                    <input class="validate" required id="qq" type="text">
+                    <div class="input-field">
+                      <input value="900" class="validate" required id="qq" type="text">
+                    </div>
                   </td>
                 </tr>
                 <tr>
