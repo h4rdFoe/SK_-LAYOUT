@@ -1,0 +1,298 @@
+<!doctype html>
+
+<html lang="ru">
+
+<head>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8">
+  <title>Профили</title>
+  <link rel="stylesheet" href="css/ias_style.css?v=1.0">
+  <link rel="icon" type="image/x-icon" href="img/logo-langing.ico">
+</head>
+
+<body>
+
+  <!-- user_bar -->
+  <ul id='user' class='dropdown-content'>
+    <li><a href="notifications_sk.html"><i class="material-icons">email</i><span class=" right new badge green"
+          data-badge-caption="4"></span>Уведомления</a></li>
+    <li><a href="#!"><i class="material-icons">exit_to_app</i>Выйти</a></li>
+  </ul>
+  <ul id='user-mobile' class='dropdown-content'>
+    <li><a href="notifications_sk.html"><span class="right new badge green"
+          data-badge-caption="4"></span>Уведомления</a></li>
+    <li><a href="#!">Выйти</a></li>
+  </ul>
+  <!-- vvod-dannyh bar -->
+  <ul id='vvod-dannyh' class='dropdown-content'>
+    <li><a href="officials_non_edit.html">Должностные лица</a></li>
+    <li><a href="categories_nonedit.html">Категории</a></li>
+    <li class="active"><a href="profile_nonedit.html">Профили</a></li>
+  </ul>
+  <ul id='vvod-dannyh-mobile' class='dropdown-content'>
+    <li><a href="officials_non_edit.html">Должностные лица</a></li>
+    <li><a href="categories_nonedit.html">Категории</a></li>
+    <li class="active"><a href="profile_nonedit.html">Профили</a></li>
+  </ul>
+  <!-- lech_bar -->
+  <ul id='lech' class='dropdown-content'>
+    <li><a href="card_sk.html">Карта пациента</a></li>
+    <li><a href="card_search_sk.html">Поиск пациента</a></li>
+    <li><a href="ticket_search_sk.html">Поиск заявки</a></li>
+    <li><a href="#!">Справочная информация</a></li>
+  </ul>
+  <ul id='lech-mobile' class='dropdown-content'>
+    <li><a href="card_sk.html">Карта пациента</a></li>
+    <li><a href="card_search_sk.html">Поиск пациента</a></li>
+    <li><a href="ticket_search_sk.html">Поиск заявки</a></li>
+    <li><a href="#!">Справочная информация</a></li>
+  </ul>
+
+  <nav class="green" style="margin-bottom: 12px">
+    <div class="nav-wrapper">
+      <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <a href="">
+        <div class="alink_logo tooltipped brand-logo right"
+          data-tooltip="Cистема мониторинга санаторно-курортного лечения">
+          <span>ЕГИСЗ</span>
+          <img class="right logo-egisz" src="img/logo-langing.png">
+        </div>
+      </a>
+      <ul class="left hide-on-med-and-down">
+        <li><a class="dropdown-trigger" href="#!" data-target="user"><i class="material-icons left">account_box</i>ЦЕНТР
+            Т.П. <i class="material-icons right">arrow_drop_down</i></a></li>
+        <li class="active"><a class="dropdown-trigger" href="#!" data-target="vvod-dannyh">ВВОД ДАННЫХ<i
+              class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a class="dropdown-trigger" href="#!" data-target="lech">ЛЕЧЕНИЕ<i
+              class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a href="">МОНИТОРИНГ</a></li>
+        <li><a href=""><i class="material-icons tooltipped" data-tooltip="АДМИНИСТРИРОВАНИЕ">settings</i></a></li>
+        <li><a href="https://portal.egisz.rosminzdrav.ru/forum/" class="tooltipped" data-tooltip="ФОРУМ"
+            target="_blank"><i class="material-icons small">forum</i></a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <ul class="sidenav" id="mobile-nav">
+    <li><a class="dropdown-trigger" href="#!" data-target="user-mobile">ЦЕНТР Т.П.<i
+          class="material-icons right">arrow_drop_down</i></a></li>
+    <li class="active"><a class="dropdown-trigger" href="#!" data-target="vvod-dannyh-mobile">ВВОД ДАННЫХ<i
+          class="material-icons right">arrow_drop_down</i></a></li>
+    <li><a class="dropdown-trigger" href="#!" data-target="lech-mobile">ЛЕЧЕНИЕ<i
+          class="material-icons right">arrow_drop_down</i></a></li>
+    <li><a href="">МОНИТОРИНГ</a></li>
+    <li><a href="">АДМИНИСТРИРОВАНИЕ</a></li>
+    <li><a href="https://portal.egisz.rosminzdrav.ru/forum/" target="_blank">ФОРУМ</a></li>
+  </ul>
+
+  <div class="content row container mobile_margin">
+    <div class="row mobile_margin">
+      <div id="main-info" class="z-depth-2 vmp_content col push-card l9 s12">
+        <h5 style="text-align: center;">Профили</h5>
+        <br>
+        <div class="row">
+          <div class="col s12">
+            <a href="profile.html" class="waves-effect waves-light btn-small green"><i
+                class="material-icons left">edit</i>Редактировать</a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12 input-field">
+            <form action="#">
+              <label><input name="group1" type="radio" checked /><span>отобразить все профили</span></label>
+              <label><input name="group1" type="radio" /><span>отобразить только выбранные профили</span></label>
+            </form>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+          <div class="col s12">
+            <ul class="collapsible">
+              <li>
+                <div class="collapsible-header"><label><input type="checkbox" / checked disabled><span></span></label><i
+                    class="material-icons">arrow_drop_down</i><b>Фтизиатрия</b></div>
+                <div class="collapsible-body"><label><input type="checkbox" / checked
+                      disabled><span></span></label><span>Туберкулез органов дыхания</span></div>
+                <div class="collapsible-body"><label><input type="checkbox" /
+                      disabled><span></span></label><span>Потенциальная опасность для здоровья, связанная с
+                    инфекционными болезнями (контакт с больным или возможность заражения туберкулезом)</span></div>
+                <div class="collapsible-body"><label><input type="checkbox" / checked
+                      disabled><span></span></label><span>Туберкулез нервной системы</span></div>
+                <div class="collapsible-body"><label><input type="checkbox" /
+                      disabled><span></span></label><span>Милиарный туберкулез</span></div>
+                <div class="collapsible-body">
+                  <ul class="collapsible">
+                    <li>
+                      <div class="collapsible-header"><label><input type="checkbox" / checked
+                            disabled><span></span></label><i class="material-icons">arrow_drop_down</i><b>Туберкулез
+                          других органов</b></div>
+                      <div class="collapsible-body"><label><input type="checkbox" / checked
+                            disabled><span></span></label><span>Туберкулез мочеполовых органов</span></div>
+                      <div class="collapsible-body"><label><input type="checkbox" / checked
+                            disabled><span></span></label><span>Туберкулез глаза</span></div>
+                      <div class="collapsible-body"><label><input type="checkbox" /
+                            disabled><span></span></label><span>Туберкулез костей и суставов</span></div>
+                      <div class="collapsible-body"><label><input type="checkbox" / checked
+                            disabled><span></span></label><span>Туберкулезная периферическая лимфаденопатия</span></div>
+                      <div class="collapsible-body"><label><input type="checkbox" /
+                            disabled><span></span></label><span>Туберкулез кишечника, брюшины и брыжеечных лимфатических
+                          узлов</span></div>
+                      <div class="collapsible-body"><label><input type="checkbox" / checked
+                            disabled><span></span></label><span>Туберкулез кожи и подкожной клетчатки</span></div>
+                      <div class="collapsible-body"><label><input type="checkbox" /
+                            disabled><span></span></label><span>Туберкулез уха</span></div>
+                      <div class="collapsible-body"><label><input type="checkbox" /
+                            disabled><span></span></label><span>Туберкулез надпочечников</span></div>
+                      <div class="collapsible-body"><label><input type="checkbox" / checked
+                            disabled><span></span></label><span>Туберкулез других уточненных органов</span></div>
+                    </li>
+                  </ul>
+                </div>
+              <li>
+                <div class="collapsible-header"><label><input type="checkbox" / disabled><span></span></label><i
+                    class="material-icons">arrow_drop_down</i><b>Эндокринология</b></div>
+                <div class="collapsible-body"><label><input type="checkbox" /
+                      disabled><span></span></label><span>Болезни эндокринной системы, расстройства питания и нарушения
+                    обмена веществ</span></div>
+              </li>
+              <li>
+                <div class="collapsible-header"><label><input type="checkbox" / disabled><span></span></label><i
+                    class="material-icons">arrow_drop_down</i><b>Психотерапия</b></div>
+                <div class="collapsible-body"><label><input type="checkbox" /
+                      disabled><span></span></label><span>Психические расстройства и расстройства поведения</span></div>
+              </li>
+              <li>
+                <div class="collapsible-header"><label><input type="checkbox" / checked disabled><span></span></label><i
+                    class="material-icons">arrow_drop_down</i><b>Неврология</b></div>
+                <div class="collapsible-body"><label><input type="checkbox" / checked
+                      disabled><span></span></label><span>Болезни нервной системы</span></div>
+              </li>
+              <li>
+                <div class="collapsible-header"><label><input type="checkbox" / disabled><span></span></label><i
+                    class="material-icons">arrow_drop_down</i><b>Офтальмология</b></div>
+                <div class="collapsible-body"><label><input type="checkbox" /
+                      disabled><span></span></label><span>Болезни глаза и его придаточного аппарата</span></div>
+              </li>
+              <li>
+                <div class="collapsible-header"><label><input type="checkbox" / checked disabled><span></span></label><i
+                    class="material-icons">arrow_drop_down</i><b>Кардиология</b></div>
+                <div class="collapsible-body"><label><input type="checkbox" / checked
+                      disabled><span></span></label><span>Болезни системы кровообращения</span></div>
+              </li>
+              <li>
+                <div class="collapsible-header"><label><input type="checkbox" / checked disabled><span></span></label><i
+                    class="material-icons">arrow_drop_down</i><b>Пульмонология</b></div>
+                <div class="collapsible-body"><label><input type="checkbox" / checked
+                      disabled><span></span></label><span>Болезни органов дыхания</span></div>
+              </li>
+              <li>
+                <div class="collapsible-header"><label><input type="checkbox" / checked disabled><span></span></label><i
+                    class="material-icons">arrow_drop_down</i><b>Гастроэнтерология</b></div>
+                <div class="collapsible-body"><label><input type="checkbox" / checked
+                      disabled><span></span></label><span>Болезни органов пищеварения</span></div>
+              </li>
+              <li>
+                <div class="collapsible-header"><label><input type="checkbox" / disabled><span></span></label><i
+                    class="material-icons">arrow_drop_down</i><b>Дерматовенерология</b></div>
+                <div class="collapsible-body"><label><input type="checkbox" /
+                      disabled><span></span></label><span>Болезни кожи и подкожной клетчатки</span></div>
+              </li>
+              <li>
+                <div class="collapsible-header"><label><input type="checkbox" / checked disabled><span></span></label><i
+                    class="material-icons">arrow_drop_down</i><b>Ревматология</b></div>
+                <div class="collapsible-body"><label><input type="checkbox" / checked
+                      disabled><span></span></label><span>Болезни костно-мышечной системы и соединительной ткани</span>
+                </div>
+              </li>
+              <li>
+                <div class="collapsible-header"><label><input type="checkbox" / disabled><span></span></label><i
+                    class="material-icons">arrow_drop_down</i><b>Урология</b></div>
+                <div class="collapsible-body"><label><input type="checkbox" /
+                      disabled><span></span></label><span>Болезни мочеполовой системы</span></div>
+              </li>
+              <li>
+                <div class="collapsible-header"><label><input type="checkbox" / checked disabled><span></span></label><i
+                    class="material-icons">arrow_drop_down</i><b>Терапия</b></div>
+                <div class="collapsible-body"><label><input type="checkbox" /
+                      disabled><span></span></label><span>Врожденные аномалии [пороки крови], деформации и хромосомные
+                    нарушения</span></div>
+                <div class="collapsible-body"><label><input type="checkbox" /
+                      disabled><span></span></label><span>Некоторые инфекционные и паразитарные болезни</span></div>
+                <div class="collapsible-body"><label><input type="checkbox" / checked
+                      disabled><span></span></label><span>Факторы, влияющие на состояние здоровья населения и обращения
+                    в учреждения здравоохранения</span></div>
+              </li>
+              <li>
+                <div class="collapsible-header"><label><input type="checkbox" / checked disabled><span></span></label><i
+                    class="material-icons">arrow_drop_down</i><b>Травматология и ортопедия</b></div>
+                <div class="collapsible-body"><label><input type="checkbox" / checked
+                      disabled><span></span></label><span>Травмы, отравления и некоторые другие последствия воздействия
+                    внешних причин</span></div>
+              </li>
+              <li>
+                <div class="collapsible-header"><label><input type="checkbox" / checked disabled><span></span></label><i
+                    class="material-icons">arrow_drop_down</i><b>Оториноларингология</b></div>
+                <div class="collapsible-body"><label><input type="checkbox" / checked
+                      disabled><span></span></label><span>Болезни уха и сосцевидного отростка</span></div>
+              </li>
+              <li>
+                <div class="collapsible-header"><label><input type="checkbox" / disabled><span></span></label><i
+                    class="material-icons">arrow_drop_down</i><b>Гематология/Иммунология</b></div>
+                <div class="collapsible-body"><label><input type="checkbox" /
+                      disabled><span></span></label><span>Болезни крови, кроветворных органов и отдельные нарушения,
+                    вовлекающие иммунный механизм</span></div>
+              </li>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ias_footer hide-on-med-and-down">
+    <div>
+      <div class="row" style="margin-bottom: 0">
+        <div class="col s6 right" style="text-align: right; margin: auto">
+          <span class="white-text" style="vertical-align: middle">
+            Служба поддержки: 8-800-500-74-78 (по России)<br>
+            Обращение в тех. поддержку:
+            <a class="alink" href="mailto:egisz@rt-eu.ru">
+              egisz@rt-eu.ru
+            </a> |
+            <a class="alink" href="https://support.egisz.rosminzdrav.ru" target="_blank">
+              ЕГИСЗ.РФ
+            </a>
+            <br> © 2016-2019 Министерство здравоохранения Российской Федерации
+          </span>
+        </div>
+        <div class="col s6">
+          <span style="vertical-align:middle">
+            <a href="https://support.egisz.rosminzdrav.ru/index.php?/Knowledge/List/Index/56" target="_blank"
+              class="alink">Описание системы</a>
+            <br>
+            <a href="https://support.egisz.rosminzdrav.ru/index.php?/Knowledge/List/Index/70" target="_blank"
+              class="alink">Часто задоваемые вопросы</a>
+            <br>
+            <a href="https://portal.egisz.rosminzdrav.ru/materials" target="_blank" class="alink">Нормативно-правовые
+              документы и руководства пользователя</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="js/card.js"></script>
+  <!--JavaScript at end of body for optimized loading-->
+  <script type="text/javascript" src="js/materialize.js"></script>
+</body>
+
+</html>
